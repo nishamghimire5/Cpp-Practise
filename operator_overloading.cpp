@@ -1,6 +1,42 @@
 #include <iostream>
 using namespace std;
 
+class Complex
+{
+    private:
+        int real, img;
+    public:
+        Complex(int r=0, int i=0){
+            real = r;
+            img = i;
+        }
+        friend Complex operator+(Complex a,Complex b);
+        void display();
+};
+
+Complex operator+(Complex a, Complex b)
+{
+        Complex t;
+        t.real = a.real + b.real;
+        t.img = b.img + a.img;
+        return t;
+}
+
+int main()
+{
+    Complex a(5,3), b(10,6), c;
+    c = a + b;
+    c.display();
+    return 0;
+}
+
+void Complex::display()
+    {
+        cout << real << "+i" << img << endl;
+    }    
+
+
+    
 // class Complex{
 //     public:
 //         int real, img;
@@ -21,33 +57,3 @@ using namespace std;
 //     cout << c.real << "+i" << c.img << endl;
 // }
 
-class Complex
-{
-    private:
-        int real, img;
-    public:
-        Complex(int r=0, int i=0){
-            real = r;
-            img = i;
-        }
-        Complex add(Complex c){
-        Complex t;
-        t.real = real + c.real;
-        t.img = img + c.img;
-        return t;
-        }
-        void display();
-};
-
-int main()
-{
-    Complex a(5,3), b(10,6), c;
-    c = a.add(b);
-    c.display();
-    return 0;
-}
-
-void Complex::display()
-    {
-        cout << real << "+i" << img << endl;
-    }    
