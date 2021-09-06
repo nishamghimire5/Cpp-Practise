@@ -8,6 +8,14 @@ class rectangle
     int breadth;
 
     public:
+    rectangle (int l=1,int b=1){ //constructor with default values
+        setLength(l);
+        setBreadth(b);
+    }
+    rectangle (rectangle &r){ //copy constructor
+        length=r.length;
+        breadth=r.breadth;
+    }
     void setLength(int l){
         if(l>0)
             length = l;
@@ -32,9 +40,15 @@ class rectangle
 
 int main()
 {
-    rectangle *p = new rectangle;
-    p->setLength(5);
+    rectangle *p = new rectangle; //heap memory
+    //pointer to objects
+    p->setLength(5);  
     p->setBreadth(10);
-    cout << "Area of reactangle is : " << p->area() << endl;
+
+    rectangle r1(3, 5);
+    rectangle r2(r1); //passing to copy constructor
+    cout << "area is : " << r2.area() << endl;
+
+    cout<< "Area of reactangle is : " << p->area() << endl;
     cout << "Perimeter of reactangle is : " << p->perimeter() << endl;
 }
