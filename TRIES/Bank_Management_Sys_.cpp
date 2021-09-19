@@ -3,33 +3,46 @@
 #include <stdio.h>
 #include <conio.h>
 #include <fstream>
+#include <stdlib.h>
+#include <string>
 using namespace std;
 
 class bank
 {
-    char name[40],address[40],acc[10];
-    int balance;
+    char name[40],address[40],type[10];
+    int balance,id;
+    string acc_num;
     static int totalCustomers;
 
 public:
     //functions available
-        void openAccount();
-        void depositMoney();
-        void withdrawMoney();
-        void displayAccount();
+        void openAccount(); //open a new account
+        void depositMoney(); //put money or add money
+        void withdrawMoney(); //take money out or subtract
+        void displayAccount(); //show account details
+        void report() const; //to show data in tabular form
 };
+
+string create_accn(int id){
+    string concat;
+    static int random = 2021;
+    concat = to_string(random) + to_string(id) + to_string(rand());
+    return concat;
+}
 
 //defining functions
 
 //first function
 void bank :: openAccount(){
+    id = totalCustomers;
+    acc_num = create_accn(totalCustomers);
     cout << "Enter Your Full Name : ";
     cin.ignore();
     cin.getline(name,40);
     cout << "Enter adress : ";
     cin.getline(address,40);
     cout << "Which type of account to create \t 1.Saving \t 2.Current : ";
-    cin.getline(acc, 10);
+    cin.getline(type, 10);
     cout << "Amount to deposit : ";
     cin >> balance;
     cout << "Congratulations! Account has been created successfully.\n";
@@ -46,9 +59,11 @@ void bank :: openAccount(){
 
 //third function
     void bank ::displayAccount(){
+        cout << "ID : " << id << endl;
+        cout << "Account Number : " << acc_num<<endl;
         cout << "Your Name : "<<name<<endl;
         cout << "Your Address : " << address << endl;
-        cout << "Type of account : " << acc<<endl;
+        cout << "Type of account : " << type<<endl;
     }
     
 //forth function
