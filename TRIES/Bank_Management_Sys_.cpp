@@ -18,6 +18,7 @@ public:
     //functions available
         void openAccount(); //open a new account
         void depositMoney(); //put money or add money
+        void modify(); // to add new datas
         void withdrawMoney(); //take money out or subtract
         void displayAccount(); //show account details
         void report() const; //to show data in tabular form
@@ -73,6 +74,29 @@ void bank :: openAccount(){
         cin >> amount;
         balance = balance - amount;
         cout << "Total balance left : " << balance<<endl;
+    }
+
+//fifth function
+    void bank::modify(){
+        int ch3, chh3;
+        cout << "Customer's ID : " << id << "\t Account Number : " << acc_num<<endl;
+        cout << "Modify Account holder's name : ";
+        cin.ignore();
+        cin.getline(name, 40);
+        cout << "Modify Account type : ";
+        cin.getline(type, 10);
+        cout << "1. Add money or 2. Withdraw Money ? : ";
+            cin >> ch3; //choice to take or put
+            cout << "Enter amount : ";
+            cin >> chh3;
+        switch(ch3){
+            case 1:
+                balance += chh3; //for adding
+                break;
+            case 2:
+                balance -= chh3; //for taking out
+                break;
+        }
     }
 
 
