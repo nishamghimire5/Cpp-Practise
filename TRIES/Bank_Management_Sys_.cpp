@@ -2,12 +2,14 @@
 #include <iostream>
 #include <stdio.h>
 #include <conio.h>
+#include <fstream>
 using namespace std;
 
 class bank
 {
-    char name[40],address[40];
-    int acc,balance;
+    char name[40],address[40],acc[10];
+    int balance;
+    static int totalCustomers;
 
 public:
     //functions available
@@ -27,7 +29,7 @@ void bank :: openAccount(){
     cout << "Enter adress : ";
     cin.getline(address,40);
     cout << "Which type of account to create \t 1.Saving \t 2.Current : ";
-    cin >> acc;
+    cin.getline(acc, 10);
     cout << "Amount to deposit : ";
     cin >> balance;
     cout << "Congratulations! Account has been created successfully.\n";
@@ -72,6 +74,7 @@ int main(){
     cout << "5.  Exit \n";
     cout << "Enter your choice : ";
     cin >> choice;
+    system("cls");
 
     switch(choice){
         case 1: 
