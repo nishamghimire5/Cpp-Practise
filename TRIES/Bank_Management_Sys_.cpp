@@ -4,6 +4,7 @@
 #include <conio.h>
 #include <fstream>
 #include <stdlib.h>
+#include <iomanip>
 #include <string>
 using namespace std;
 
@@ -63,7 +64,8 @@ void bank :: openAccount(){
         cout << "ID : " << id << endl;
         cout << "Account Number : " << acc_num<<endl;
         cout << "Your Name : "<<name<<endl;
-        cout << "Your Address : " << address << endl;
+        cout << "Your Address : " << address<<endl;
+        cout << "Your balance : "<<balance<<endl;
         cout << "Type of account : " << type<<endl;
     }
     
@@ -97,6 +99,11 @@ void bank :: openAccount(){
                 balance -= chh3; //for taking out
                 break;
         }
+    }
+
+//sixth function
+    void bank :: report() const{
+        cout << id << setw(6) << acc_num << setw(6) << name << setw(6) << address << setw(6) << type << setw(6) << balance << endl;
     }
 
 
