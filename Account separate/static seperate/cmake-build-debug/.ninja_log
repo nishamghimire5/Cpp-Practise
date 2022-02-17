@@ -1,0 +1,13 @@
+# ninja log v5
+0	54	0	clean	80727070b5b16674
+1	1430	6642809592341602	CMakeFiles/static_separate.dir/main.cpp.obj	847b083814b8e498
+8	733	6642809882685451	CMakeFiles/static_separate.dir/player.cpp.obj	d06c44aa3cf021ac
+734	1154	6642809886824379	static_separate.exe	bbb15769f1029f03
+10	1110	6642812957517566	CMakeFiles/static_separate.dir/main.cpp.obj	847b083814b8e498
+1111	1493	6642812961247590	static_separate.exe	bbb15769f1029f03
+10	1036	6642814058559075	CMakeFiles/static_separate.dir/main.cpp.obj	847b083814b8e498
+1037	1388	6642814062019825	static_separate.exe	bbb15769f1029f03
+9	1102	6642815560969104	CMakeFiles/static_separate.dir/main.cpp.obj	847b083814b8e498
+1104	1447	6642815564350053	static_separate.exe	bbb15769f1029f03
+7	1027	6642816967329475	CMakeFiles/static_separate.dir/main.cpp.obj	847b083814b8e498
+1028	1357	6642816970580784	static_separate.exe	bbb15769f1029f03

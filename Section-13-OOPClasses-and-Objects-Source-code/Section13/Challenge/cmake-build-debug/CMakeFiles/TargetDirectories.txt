@@ -1,0 +1,3 @@
+C:/Users/ASUS/OneDrive - thenisham/Desktop/-/programming/Cpp Practise/Section-13-OOPClasses-and-Objects-Source-code/Section13/Challenge/cmake-build-debug/CMakeFiles/Challenge.dir
+C:/Users/ASUS/OneDrive - thenisham/Desktop/-/programming/Cpp Practise/Section-13-OOPClasses-and-Objects-Source-code/Section13/Challenge/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/OneDrive - thenisham/Desktop/-/programming/Cpp Practise/Section-13-OOPClasses-and-Objects-Source-code/Section13/Challenge/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+# ninja log v5
+1	837	6633402502331880	CMakeFiles/Account_separate.dir/account.cpp.obj	400f9e93df09edc1
+38	1069	6633402504635714	CMakeFiles/Account_separate.dir/main.cpp.obj	e54c2d9afadbe1a6
+1069	1487	6633402508774671	Account_separate.exe	32e86330ffcc2a1f

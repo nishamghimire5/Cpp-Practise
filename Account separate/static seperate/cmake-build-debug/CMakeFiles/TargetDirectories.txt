@@ -1,0 +1,3 @@
+C:/Users/ASUS/OneDrive - thenisham/Desktop/-/programming/Cpp Practise/Account separate/static seperate/cmake-build-debug/CMakeFiles/static_separate.dir
+C:/Users/ASUS/OneDrive - thenisham/Desktop/-/programming/Cpp Practise/Account separate/static seperate/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/OneDrive - thenisham/Desktop/-/programming/Cpp Practise/Account separate/static seperate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
